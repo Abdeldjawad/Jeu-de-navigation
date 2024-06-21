@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.root {
+    -fx-background-image: url("images/background.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-position: center;
+}
+
+.header-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-padding: 10px;
+    -fx-font-family: 'Pacifico', cursive; /* Utiliser la nouvelle police */
+}
+
+.styled-border {
+    -fx-border-color: #ff6600; /* Couleur de bordure orange */
+    -fx-border-width: 2;
+    -fx-border-radius: 5;
+    -fx-padding: 5; /* Padding optionnel */
+    -fx-background-color: #ffffff; /* Arrière-plan blanc pour contraster avec l'orange */
+    -fx-background-radius: 5;
+}
+
+.control-panel {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0);
+}
+
+.vehicle-panel {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0);
+}
+
+.vehicle-pane {
+    -fx-border-color: #ccc;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #eaeaea;
+    -fx-background-radius: 10px;
+}
+
+.combo-box {
+    -fx-padding: 10px;
+    -fx-background-color: #ffffff, #d3d3d3, #e6e6e6;
+    -fx-background-insets: 0, 1 1 1 1, 2 2 2 2;
+    -fx-background-radius: 3, 2, 1;
+    -fx-font-size: 14px;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 5;
+    -fx-border-width: 1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0);
+}
+
+.combo-box:hover {
+    -fx-background-color: #e8e8e8, #d3d3d3, #e6e6e6;
+}
+
+.combo-box .list-cell {
+    -fx-padding: 10px;
+}
+
+.combo-box .list-cell:filled:selected, .combo-box .list-cell:filled:hover {
+    -fx-background-color: #6b6b6b;
+    -fx-text-fill: white;
+}
+
+.combo-box .arrow {
+    -fx-background-color: transparent;
+    -fx-padding: 0 10px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: #d3d3d3;
+    -fx-background-radius: 0 5 5 0;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 0 0 1;
+}

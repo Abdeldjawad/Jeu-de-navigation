@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projetihmjeu.PersonnalisationController">
+    <center>
+        <GridPane alignment="CENTER" hgap="20" vgap="20">
+            <VBox spacing="20" styleClass="control-panel" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <Label styleClass="header-label" text="Sélectionnez le modèle :" translateX="-10" />
+                <ComboBox fx:id="modelSelector" onAction="#handleModelSelection" prefWidth="150" styleClass="combo-box" />
+                <Label styleClass="header-label" text="Sélectionnez la couleur :" translateX="-10" />
+            <Label text="Drag &amp; Drop">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+                <HBox spacing="20">
+                    <Circle fx:id="redColor" fill="red" onDragDetected="#handleDragDetected" radius="30" style="-fx-cursor: hand;" />
+                    <Circle fx:id="blueColor" fill="blue" onDragDetected="#handleDragDetected" radius="30" style="-fx-cursor: hand;" />
+                    <Circle fx:id="greenColor" fill="#32CD32" onDragDetected="#handleDragDetected" radius="30" style="-fx-cursor: hand;" /> <!-- Vert clair -->
+                    <Circle fx:id="yellowColor" fill="yellow" onDragDetected="#handleDragDetected" radius="30" style="-fx-cursor: hand;" />
+                </HBox>
+                <Label styleClass="header-label" text="Sélectionnez le motif :" translateX="-10" />
+            <Label layoutX="30.0" layoutY="256.0" text="Drag &amp; Drop">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+                <HBox spacing="20">
+                    <ImageView fx:id="flameMotif" fitHeight="45.0" fitWidth="107.0" onDragDetected="#handleDragDetected" style="-fx-cursor: hand;">
+                        <image>
+                            <Image url="@images/flame.jpg" />
+                        </image>
+                    </ImageView>
+                </HBox>
+            </VBox>
+            <VBox alignment="CENTER" spacing="20" styleClass="vehicle-panel" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <Label styleClass="header-label" text="Véhicule" />
+                <Pane fx:id="vehiclePane" onDragDropped="#handleDragDropped" onDragOver="#handleDragOver" prefHeight="300" prefWidth="400" styleClass="vehicle-pane">
+                    <children>
+                        <ImageView fx:id="carBody" fitHeight="283.0" fitWidth="300.0" layoutX="50.0" layoutY="9.0" />
+                    </children>
+                </Pane>
+                <Button mnemonicParsing="false" onAction="#handleRandomSelection" prefHeight="26.0" prefWidth="85.0" text="Aléatoire">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Button>
+
+                <Button mnemonicParsing="false" onAction="#handlebtnValider" prefHeight="26.0" prefWidth="85.0" text="Valider">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            </VBox>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,5 @@
+.flow-pane {
+    -fx-background-image: url("images/imageFond.jpg");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}

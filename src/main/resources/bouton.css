@@ -1,0 +1,11 @@
+.button {
+    -fx-background-image: url("images/button.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+}
+
+
+.button:hover{
+    -fx-blend-mode: HARD_LIGHT;
+
+}
