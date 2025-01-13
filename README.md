@@ -48,10 +48,7 @@ Le **Jeu de Navigation en Voiture** est un jeu interactif développé en Java av
 ---
 
 ## Démonstration Vidéo
-<video width="640" height="360" controls>
-  <source src="video/VIDEOPROJET.mp4" type="video/mp4">
-  Votre navigateur ne supporte pas les vidéos intégrées.
-</video>
+[Regarder la vidéo](video/VIDEOPROJET.mp4)
 
 
 ## 📋 Instructions d'Installation
