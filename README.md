@@ -1,4 +1,4 @@
-# 🚗 Jeu de Navigation en Voiture
+#  Jeu de Navigation en Voiture
 
 ## Description du Projet
 
@@ -6,7 +6,7 @@ Le **Jeu de Navigation en Voiture** est un jeu interactif développé en Java av
 
 ---
 
-## 🎮 Fonctionnalités
+##  Fonctionnalités
 
 ### Composants Visuels
 1. **Interaction Drag & Drop :** Déplacement intuitif des éléments dans le jeu.
@@ -42,7 +42,6 @@ Le **Jeu de Navigation en Voiture** est un jeu interactif développé en Java av
 
 - **Langage :** Java
 - **Interface Graphique :** JavaFX
-- **Environnement de Développement :** IntelliJ IDEA 
 - **Gestion de Versions :** Git
 
 ---
@@ -50,10 +49,4 @@ Le **Jeu de Navigation en Voiture** est un jeu interactif développé en Java av
 ## Démonstration Vidéo
 [Télécharger la vidéo](video/VIDEOPROJET.mp4)
 
-
-## 📋 Instructions d'Installation
-
-1. **Cloner le dépôt :**
-   ```bash
-   git clone https://github.com/Abdeldjawad/Jeu-de-navigation
 
